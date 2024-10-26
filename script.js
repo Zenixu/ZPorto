@@ -20,15 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const socialLinks = {
         discord: {
             element: document.querySelector('.fa-discord'),
-            url: 'https://discord.gg/your-discord-server'  // Ganti dengan link Discord Anda
+            url: 'https://discord.gg/2kt49PnWwe'  
         },
         github: {
             element: document.querySelector('.fa-github'),
-            url: 'https://github.com/Zenixu'  // Ganti dengan link GitHub Anda
+            url: 'https://github.com/Zenixu'  
         },
         instagram: {
             element: document.querySelector('.fa-instagram'),
-            url: 'https://instagram.com/Zennrch'  // Ganti dengan link Instagram Anda
+            url: 'https://instagram.com/Zennrch'  
         }
     };
 
