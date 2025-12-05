@@ -84,7 +84,6 @@ body {
 }
 
 section {
-  min-height: 100vh;
   padding: 5rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
@@ -101,8 +100,9 @@ section {
 .about-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .cards-profile {
@@ -204,8 +204,6 @@ section {
   gap: 2rem;
   align-items: flex-start;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: 175px;
 }
 
 .grid-card {
@@ -261,15 +259,27 @@ section {
   gap: 2rem;
 }
 
-.project-gallery img {
+.project-item {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: block; /* Ensures the whole area is clickable */
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-item h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.project-item img {
   width: 100%;
   border-radius: 1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.project-gallery img:hover {
-  transform: scale(1.05);
 }
 
 footer {
@@ -485,4 +495,8 @@ footer p {
     font-size: 1.3rem;
   }
   
+}
+
+.hidden {
+  display: none;
 }

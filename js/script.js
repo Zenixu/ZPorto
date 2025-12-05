@@ -76,19 +76,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Profile switching logic
+  // Profile card switching logic
+  const switchProfileBtn = document.querySelector('#switch-profile-btn');
+  const profileIbnu = document.querySelector('#profile-ibnu');
+  const profileZenn = document.querySelector('#profile-zenn');
+  const profileNameElement = document.querySelector('#profile-name');
+  const profileImageElement = document.querySelector('#profile-img');
   const profiles = [
     { name: 'Ibnurch', image: 'img/Iprof.jpg' },
     { name: 'Zennrch', image: 'img/Zprof.jpg' }
   ];
   let currentProfileIndex = 0;
 
-  const profileNameElement = document.querySelector('#profile-name');
-  const profileImageElement = document.querySelector('#profile-img');
-  const switchProfileBtn = document.querySelector('#switch-profile-btn');
 
-  if (switchProfileBtn && profileNameElement && profileImageElement) {
+  if (switchProfileBtn && profileIbnu && profileZenn) {
     switchProfileBtn.addEventListener('click', () => {
+      // Toggle the description cards
+      profileIbnu.classList.toggle('hidden');
+      profileZenn.classList.toggle('hidden');
+
+      // Toggle the main profile image and name
       currentProfileIndex = (currentProfileIndex + 1) % profiles.length;
       const newProfile = profiles[currentProfileIndex];
       profileNameElement.textContent = newProfile.name;

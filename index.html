@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LastPorto</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Z&</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="/img/test.ico">
 </head>
 <body>
   <header class="header">
     <a href="#" class="logo">Zennrch</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
+      <li><a href="#experience">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
     </ul>
     <button class="visit-btn">Visit Github</button>
@@ -44,40 +45,60 @@
       </div>
 
       <div class="cards-container">
-        <div class="grid-card">
+        <div class="grid-card" id="profile-ibnu">
           <i class="fas fa-user"></i>
           <h3>Ibnu</h3>
           <p>16 Years</p>
           <p>Saya adalah seseorang yang selalu bimbang akan jalan yang saya tempuh kedepannya, Nama saya adalah Ibnu Hambal Al Bantani Rch, saat ini saya bersekolah di SMK NEGERI 1 CIANJUR, tidak banyak hal yang bisa saya ceritakan disini.</p>
         </div>
-        <div class="grid-card">
+        <div class="grid-card hidden" id="profile-zenn">
           <i class="fas fa-user"></i>
           <h3>Zenn</h3>
           <p>Me in Virtual</p>
           <p>Saya adalah seseorang yang selalu terlihat sempurna, dari segi apapun itu dibanding kehidupan nyata, saya adalah versi sempurna dari hal yang seharusnya ada, tapi di dunia ini kesempurnaan hanya dimiliki oleh tuhan.</p>
         </div>
       </div>
+
+      <div class="experience-info">
+        <div class="grid">
+          <div class="grid-card">
+            <i class="fas fa-tv"></i>
+            <h3>MyFavAnime</h3>
+            <p>Detective Conan, Bungou Stray Dogs, Pokemon, Vanitas no Carte, JOJO, No Game No Life, dll.</p>
+          </div>
+          <div class="grid-card">
+            <i class="fas fa-book"></i>
+            <h3>MyFavManhwa</h3>
+            <p>ORV, TOG, LOTL, TBATE, SOLEV, Lookism, Magic Emperor, Killer Peter, dan lainnya.</p>
+          </div>
+          <div class="grid-card">
+            <i class="fas fa-book-open"></i>
+            <h3>MyFavNovel</h3>
+            <p>Omniscient Reader's Viewpoint, Lord of the Mysteries.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="experience" id="experience">
-  <h2 class="section-title">My Information</h2>
+  <h2 class="section-title">My Skills</h2>
     <div class="experience-info">
       <div class="grid">
         <div class="grid-card">
-          <i class="fas fa-tv"></i>
-          <h3>MyFavAnime</h3>
-          <p>Detective Conan, Bungou Stray Dogs, Pokemon, Vanitas no Carte, JOJO, No Game No Life, dll.</p>
+          <i class="fas fa-code"></i>
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript</p>
         </div>
         <div class="grid-card">
-          <i class="fas fa-book"></i>
-          <h3>MyFavManhwa</h3>
-          <p>ORV, TOG, LOTL, TBATE, SOLEV, Lookism, Magic Emperor, Killer Peter, dan lainnya.</p>
+          <i class="fas fa-server"></i>
+          <h3>Backend</h3>
+          <p>Node.js, PHP, Laravel</p>
         </div>
         <div class="grid-card">
-          <i class="fas fa-book-open"></i>
-          <h3>MyFavNovel</h3>
-          <p>Omniscient Reader's Viewpoint, Lord of the Mysteries.</p>
+          <i class="fas fa-database"></i>
+          <h3>Database</h3>
+          <p>MySQL, PostgreSQL</p>
         </div>
       </div>
     </div>
@@ -86,20 +107,26 @@
   <section class="projects" id="projects">
     <h2 class="section-title">My Projects</h2>
     <div class="project-gallery">
-      <img src="img/QRCODE.png" alt="QRCODE">
-      <img src="img/PokemonDataJson.png" alt="QRCODE">
+      <a href="projects/qrcode/qrcode.html" class="project-item">
+        <h3>QR Code Generator</h3>
+        <img src="img/QRCODE.png" alt="QRCODE">
+      </a>
+      <a href="projects/pokemon/pokemon.html" class="project-item">
+        <h3>Pokemon Data JSON</h3>
+        <img src="img/PokemonDataJson.png" alt="PokemonDataJson">
+      </a>
     </div>
   </section>
 
   <footer>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
+      <li><a href="#experience">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
     </ul>
     <p>© All Rights Reserved ~Zennrch</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
